@@ -94,9 +94,10 @@ pipx install .
 
 If you don't have `pipx`:
 ```bash
-pip install pipx
-pipx install .
+brew install pipx
+pipx ensurepath
 ```
+Restart Terminal so PATH updates take effect.
 
 Or install directly with pip into your current environment:
 ```bash
