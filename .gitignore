@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+
+# Test artefacts
+.pytest_cache/
+
+# Capture files (potentially large and/or sensitive)
+*.etl
+*.pcap
+*.pcapng
+*.cap
+
+# Debug output
+*.jsonl
+
+# Developer-only files
+ENHANCEMENTS.md

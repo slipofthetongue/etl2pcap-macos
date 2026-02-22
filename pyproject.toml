@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "etl2pcap-macos"
+version = "0.2.0"
+description = "Convert Windows ETL packet captures (netsh/pktmon) to PCAPNG on macOS/Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "slipofthetongue" }]
+dependencies = [
+  "dissect.etl>=3.11",
+]
+
+[project.scripts]
+etl2pcap-macos = "etl2pcap_macos.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
