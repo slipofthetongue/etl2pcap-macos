@@ -6,7 +6,7 @@ These scripts are aimed at security researchers and network analysts who need to
 
 ## Background
 
-Tech support personnel and incident response teams working on corporate macOS or Linux machines often have to scramble to find a Windows host just to run Microsoft's native `etl2pcapng.exe` conversion tool. This is compounded by the fact that the ETL format is proprietary and the only way to parse it is through the ETW APIs (`OpenTrace`, `ProcessTrace`, etc.), which are Windows-exclusive, so there is no straightforward path to a native cross-platform implementation. ETL files produced by `netsh trace` and `pktmon` are the standard output format for Windows built-in packet capture, but they are unreadable by Wireshark without conversion first.
+Tech support personnel and incident response teams working on corporate macOS or Linux machines often have to scramble to find a Windows host just to run Microsoft's native [`etl2pcapng.exe`](https://github.com/microsoft/etl2pcapng) conversion tool. This is compounded by the fact that the ETL format is proprietary and the only way to parse it is through the ETW APIs (`OpenTrace`, `ProcessTrace`, etc.), which are Windows-exclusive, so there is no straightforward path to a native cross-platform implementation. ETL files produced by `netsh trace` and `pktmon` are the standard output format for Windows built-in packet capture, but they are unreadable by Wireshark without conversion first.
 
 Specifically:
 
