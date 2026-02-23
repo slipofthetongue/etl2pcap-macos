@@ -1,4 +1,4 @@
-"""Developer tool — not part of the installed package.
+"""Developer tool — to be used for debugging/tshooting
 
 Compares packet payloads between two PCAP/PCAPNG files using SHA-256 hashes.
 Useful for validating etl2pcap-macos output against etl2pcapng.exe reference captures.
